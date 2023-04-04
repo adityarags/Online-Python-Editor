@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Python Editor</title>
+</head>
+<body>
+	<form method = "POST">
+		<textarea name="code" placeholder="Your Code Here"></textarea>
+		<button type="submit">Submit</button>
+		<button type="reset">Reset</button>
+	</form>
+
+	<p>
+		{{ output }}
+	</p>
+
+	{% if error %}
+	<p>
+		Error: {{ error }}
+	</p>
+	{% endif %}
+
+</body>
+</html>
